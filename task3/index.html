@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>String Utilities</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>String Utility Functions</h1>
+
+  <section class="utility">
+    <label for="inputText">Enter Text:</label>
+    <input type="text" id="inputText" placeholder="Type something...">
+
+    <label for="maxLength">Max Length (for truncate):</label>
+    <input type="number" id="maxLength" min="1" placeholder="e.g. 3">
+
+    <div class="buttons">
+      <button onclick="handleReverse()">Reverse String</button>
+      <button onclick="handleCountVowels()">Count Vowels</button>
+      <button onclick="handleTruncate()">Truncate</button>
+    </div>
+
+    <h2>Result:</h2>
+    <p id="result"></p>
+  </section>
+
+  <script src="task-3.js"></script>
+</body>
+</html>

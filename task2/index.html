@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Case Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Task 2</h1>   
+    <h2>Sentence Case Converter</h2>
+
+    <div class="form-group">
+        <input type="text" id="sentence" placeholder="Enter your sentence..." size="40">
+        <select name="selector" id="caseType">
+            <option value="camel">CamelCase</option>
+            <option value="snake">snake_case</option>
+            <option value="kebab">kebab-case</option>
+            <option value="pascal">PascalCase</option>
+            <option value="upperSnake">UPPER_CASE_SNAKE_CASE</option>
+        </select>
+    </div>
+
+    <button onclick="convert()">Convert</button>
+
+    <h4><strong>Result: </strong></h4>
+    <h4> <span id="result"></span></h4>
+
+    <script src="task-2.js"></script>
+</body>
+</html>
