@@ -11,30 +11,50 @@ h1 {
 }
 
 .utility {
-  max-width: 500px;
+  max-width: 700px;
   margin: auto;
-  background: white;
-  padding: 20px;
+  padding: 3rem;
   border-radius: 10px;
+  border: 1px solid green;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.utility:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 label {
   display: block;
-  margin-top: 10px;
+  margin-top: 1.5rem;
   font-weight: bold;
 }
 
 input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  font-size: 1rem;
 }
 
+input {
+  flex: 1;  
+  width: 90%;
+  max-width: 520px;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px rgba(46,125,50,.15);
+}
+
+
 .buttons {
-  margin-top: 20px;
+  margin-top: 1.5rem;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -45,20 +65,34 @@ button {
   padding: 10px;
   border: none;
   border-radius: 6px;
-  background: #007acc;
-  color: white;
+  border: 1px solid #1b5e20; 
   font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 button:hover {
-  background: #005fa3;
+  background: #1b5e20; 
+  transform: translateY(-2px);
+  color: white;
 }
 
-#result {
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #007acc;
+button.active {
+  background: #2e7d32 !important; 
+  color: white;
+
 }
+
+
+#result  {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f7faf7;
+  border: 1px solid #e0f2e0;
+  border-radius: 10px;
+  line-height: 1.6;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+#result { font-weight: bold; color: #1b5e20; }

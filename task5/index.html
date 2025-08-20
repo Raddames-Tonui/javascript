@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Strength Checker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="container">
+    <h2>Password Strength Checker</h2>
+    <form id="passwordForm">
+        <div class="password">
+            <input type="password" id="password" placeholder="Enter password" />
+            <button type="submit">Check Strength</button>
+        </div>
+        
+      <ul class="criteria">
+        <li id="length">Min Length of 8 characters</li>
+        <li id="uppercase">At least 1 uppercase letter</li>
+        <li id="lowercase">At least 1 lowercase letter</li>
+        <li id="number">At least 1 number</li>
+        <li id="special">At least 1 special character</li>
+      </ul>
 
-        <script src="./task-5.js"></script>
+    </form>
+
+    <p id="strengthResult"></p>
+  </div>
+
+  <script src="task-5.js"></script>
 </body>
 </html>

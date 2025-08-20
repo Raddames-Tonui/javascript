@@ -1,0 +1,102 @@
+* { 
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.utility {
+  width: 90%;
+  max-width: 900px;
+  margin: auto 2rem;
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #37dd37;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+h1 { text-align: center; margin: 0 0 1rem; }
+
+.mode {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.mode label { cursor: pointer; }
+
+.row {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  align-items: center;
+}
+input#valueInput {
+  flex: 1;
+  max-width: 520px;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+input#valueInput:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px rgba(46,125,50,.15);
+}
+
+button {
+  padding: .75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform .12s ease, background .25s ease;
+}
+button:hover { transform: translateY(-1px); }
+button:active { transform: scale(0.98); }
+
+button.primary { background: #2e7d32; color: #fff; }
+button.primary:hover { background: #1b5e20; }
+
+button.secondary { background: #eef3ef; color: #1b5e20; }
+
+.list-wrap { margin: 1rem 0; }
+.pill-list {
+  min-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  padding: .5rem 0;
+  border-top: 1px dashed #cbd5e1;
+  border-bottom: 1px dashed #cbd5e1;
+}
+.pill {
+  padding: .35rem .6rem;
+  border: 1px solid #c8e6c9;
+  border-radius: 999px;
+  background: #f6fff6;
+  font-size: .95rem;
+}
+
+.submit-wrap { display: flex; justify-content: center; margin-top: 1rem; }
+
+.output {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f7faf7;
+  border: 1px solid #e0f2e0;
+  border-radius: 10px;
+  line-height: 1.6;
+  font-size: 1rem;
+  word-break: break-word;
+}
+.output .title { font-weight: bold; color: #1b5e20; }

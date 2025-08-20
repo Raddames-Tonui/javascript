@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Banking Array Utilities</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    
+  <section class="utility">
+    <h1>Banking Array Utilities</h1>
 
-        <script src="./task-6.js"></script>
+    <div class="mode">
+      <label><input type="radio" name="mode" value="numbers" checked> Numbers (balances/transactions)</label>
+      <label><input type="radio" name="mode" value="ids"> Transaction IDs</label>
+    </div>
+
+    <div class="row">
+      <input type="text" id="valueInput" placeholder="Enter a value and click Add"/>
+      <button id="addBtn" type="button">Add</button>
+      <button id="clearBtn" type="button" class="secondary">Clear</button>
+    </div>
+
+    <div class="list-wrap">
+      <h3>Current Values:</h3>
+      <div id="valuesList" class="pill-list"></div>
+    </div>
+
+    <div class="submit-wrap">
+      <button id="submitBtn" type="button" class="primary">Submit</button>
+    </div>
+
+    <div id="output" class="output"></div>
+  </section>
+
+  <script src="task-6.js"></script>
 </body>
 </html>
